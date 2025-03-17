@@ -15,3 +15,13 @@ an easy and intuitive language just as powerful as those of the major competitor
 open source, so anyone can contribute to its development;
 code that is as understandable as plain English;
 suitable for everyday tasks, allowing for short development times.
+
+# Why Python?
+
+There are many reasons – 
+
+it's easy to learn - the time needed to learn Python is shorter than for many other languages; this means that it's possible to start the actual programming faster;
+it's easy to teach - the teaching workload is smaller than that needed by other languages; this means that the teacher can put more emphasis on general (language-independent) programming techniques, not wasting energy on exotic tricks, strange exceptions and incomprehensible rules;
+it's easy to use for writing new software - it's often possible to write code faster when using Python;
+it's easy to understand - it's also often easier to understand someone else's code faster if it is written in Python;
+it's easy to obtain, install and deploy - Python is free, open and multiplatform; not all languages can boast that.
