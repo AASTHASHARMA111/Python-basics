@@ -25,3 +25,11 @@ it's easy to teach - the teaching workload is smaller than that needed by other 
 it's easy to use for writing new software - it's often possible to write code faster when using Python;
 it's easy to understand - it's also often easier to understand someone else's code faster if it is written in Python;
 it's easy to obtain, install and deploy - Python is free, open and multiplatform; not all languages can boast that.
+
+# Starting your work with Python
+
+To start your work, you need the following tools:
+•	an editor which will support you in writing the code (it should have some special features, not available in simple tools); this dedicated editor will give you more than the standard OS equipment;
+•	a console in which you can launch your newly written code and stop it forcibly when it gets out of control;
+•	a tool named a debugger, able to launch your code step-by-step, which will allow you to inspect it at each moment of execution.
+
