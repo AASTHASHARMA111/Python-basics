@@ -33,3 +33,10 @@ To start your work, you need the following tools:
 •	a console in which you can launch your newly written code and stop it forcibly when it gets out of control;
 •	a tool named a debugger, able to launch your code step-by-step, which will allow you to inspect it at each moment of execution.
 
+# Summary 
+
+1. The print() function is a built-in function. It prints/outputs a specified message to the screen/console window.
+2. Built-in functions, contrary to user-defined functions, are always available and don't have to be imported. Python 3.8 comes with 69 built-in functions. You can find their full list provided in alphabetical order in the Python Standard Library.
+3. To call a function (this process is known as function invocation or function call), you need to use the function name followed by parentheses. You can pass arguments into a function by placing them inside the parentheses. You must separate arguments with a comma, e.g., print("Hello,", "world!"). An "empty" print() function outputs an empty line to the screen.
+4. Python strings are delimited with quotes, e.g., "I am a string" (double quotes), or 'I am a string, too' (single quotes).
+5. Computer programs are collections of instructions. An instruction is a command to perform a specific task when executed, e.g., to print a certain message to the screen.
