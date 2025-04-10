@@ -88,3 +88,13 @@ Commas cannot be used in numbers (e.g., 11,111 is invalid).
 
 Literals are essential for encoding data in Python programs.
 
+## 4. Boolean Values <br>
+Only two Boolean values: True and False
+
+Case-sensitive (true or FALSE will cause an error)
+
+Output of:
+
+print(True > False)  # Output: True
+print(True < False)  # Output: False
+Because in numeric context: True = 1, False = 0
