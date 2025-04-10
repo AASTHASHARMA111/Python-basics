@@ -320,7 +320,7 @@ This section introduces user interaction in Python using the input() function.
 
 You’ll learn to accept user input, convert it to different data types, and use string operators.
 
-🔹 2.6.1 The input() function
+🔹 1 The input() function
 The input() function reads data entered by the user and returns it as a string.
 
 Basic example:
@@ -330,34 +330,34 @@ anything = input()
 print("Hmm...", anything, "... Really?")
 Note: Always store the input in a variable, or the data will be lost.
 
-🔹 2.6.2 input() with a prompt
+🔹 2 input() with a prompt
 You can pass a string argument to input() to show a prompt:
 
 anything = input("Tell me anything...")
 
-🔹 2.6.3 Result of input()
+🔹 3 Result of input()
 The result of input() is always a string.
 
 Arithmetic operations can’t be done directly on input values unless they are converted.
 
-🔹 2.6.4 Prohibited operations
+🔹 4 Prohibited operations
 Trying to use a string (from input()) in a math operation causes a TypeError.
 
 anything = input("Enter a number: ")
 something = anything ** 2.0  # ❌ TypeError
 
-🔹 2.6.5 Type Casting
+🔹5 Type Casting
 Use int() and float() to convert strings to numeric types:
 
 number = float(input("Enter a number: "))
 print(number ** 2)
 
-🔹 2.6.6 Practical usage
+🔹6 Practical usage
 Use type casting with input() to build interactive, numeric programs.
 
 Example: calculating hypotenuse by reading user input.
 
-🔹 2.6.7 String Operators
+🔹 7 String Operators
 The + operator concatenates strings:
 
 "Hello " + "World"  # → "Hello World"
@@ -365,12 +365,12 @@ The * operator repeats strings:
 
 "Hi" * 3  # → "HiHiHi"
 
-🔹 2.6.8 Converting numbers to strings
+🔹8 Converting numbers to strings
 Use str() to convert numbers to strings:
 
 str(3.14)  # → "3.14"
 
-🔹 2.6.9 LAB: Simple Input and Output
+🔹 9 LAB: Simple Input and Output
 Practice: Accept two numbers and print results of:
 
 Addition
