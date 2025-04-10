@@ -98,3 +98,93 @@ Output of:
 print(True > False)  # Output: True
 print(True < False)  # Output: False
 Because in numeric context: True = 1, False = 0
+
+### SECTION SUMMARY<br>
+
+1. Literals are notations for representing some fixed values in code. Python has various types of literals - for example, a literal can be a number (numeric literals, e.g., 123), or a string (string literals, e.g., "I am a literal.").
+
+2. The binary system is a system of numbers that employs 2 as the base. Therefore, a binary number is made up of 0s and 1s only, e.g., 1010 is 10 in decimal.
+
+Octal and hexadecimal numeration systems, similarly, employ 8 and 16 as their bases respectively. The hexadecimal system uses the decimal numbers and six extra letters.
+3. Integers (or simply ints) are one of the numerical types supported by Python. They are numbers written without a fractional component, e.g., 256, or -1 (negative integers).
+
+4. Floating-point numbers (or simply floats) are another one of the numerical types supported by Python. They are numbers that contain (or are able to contain) a fractional component, e.g., 1.27.
+
+5. To encode an apostrophe or a quote inside a string, you can either use the escape character, e.g., 'I\'m happy.', or open and close the string using an opposite set of symbols to the ones you wish to encode, e.g., "I'm happy." to encode an apostrophe, and 'He said "Python", not "typhoon"' to encode a (double) quote.
+
+6. Boolean values are the two constant objects True and False used to represent truth values (in numeric contexts 1 is True, while 0 is False.
+
+Extra  
+
+There is one more, special literal that is used in Python: the None literal. This literal is a NoneType object, and it is used to represent the absence of a value.
+
+# Python Operators Overview <br>
+Python can be used like a calculator with the print() function.
+
+## Basic Arithmetic Operators<br>
++ Addition
+
+- Subtraction (also unary minus to change sign)
+
+* Multiplication
+
+/ Division (always returns a float)
+
+// Integer (floor) division – rounds down
+
+% Modulo – gives remainder
+
+** Exponentiation
+
+Rule:
+
+If both operands are integers → result is int
+
+If any operand is float → result is float
+
+## Division by Zero<br>
+Always raises an error, including % and //.
+
+## Unary vs Binary Operators<br>
+Binary needs two operands (e.g., 5 - 2)
+
+Unary acts on one (e.g., -3, +2)
+
+## Operator Precedence<br>
+Determines which operation runs first (like * before +).
+
+Example:
+2 + 3 * 5 → 2 + (3 * 5) → 17
+
+🔗 Operator Binding (Associativity)
+Most operators: Left-to-right
+
+9 % 6 % 2 → (9 % 6) % 2 → 1
+
+Exponentiation (**): Right-to-left
+
+2 ** 2 ** 3 → 2 ** (2 ** 3) → 256
+
+## Key takeaways<br>
+
+1. An expression is a combination of values (or variables, operators, calls to functions ‒ you will learn about them soon) which evaluates to a certain value, e.g., 1 + 2.
+
+2. Operators are special symbols or keywords which are able to operate on the values and perform (mathematical) operations, e.g., the * operator multiplies two values: x * y.
+
+3. Arithmetic operators in Python: + (addition), - (subtraction), * (multiplication), / (classic division ‒ always returns a float), % (modulus ‒ divides left operand by right operand and returns the remainder of the operation, e.g., 5 % 2 = 1), ** (exponentiation ‒ left operand raised to the power of right operand, e.g., 2 ** 3 = 2 * 2 * 2 = 8), // (floor/integer division ‒ returns a number resulting from division, but rounded down to the nearest whole number, e.g., 3 // 2.0 = 1.0)
+
+4. A unary operator is an operator with only one operand, e.g., -1, or +3.
+
+5. A binary operator is an operator with two operands, e.g., 4 + 5, or 12 % 5.
+
+6. Some operators act before others - the hierarchy of priorities:
+
+the ** operator (exponentiation) has the highest priority;
+then the unary + and - (note: a unary operator to the right of the exponentiation operator binds more strongly, for example 4 ** -1 equals 0.25)
+then: *, /, and %,
+and finally, the lowest priority: binary + and -.
+7. Subexpressions in parentheses are always calculated first, e.g., 15 - 1 * (5 * (1 + 2)) = 0.
+
+8. The exponentiation operator uses right-sided binding, e.g., 2 ** 2 ** 3 = 256.
+
+
