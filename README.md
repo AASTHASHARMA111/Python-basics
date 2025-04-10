@@ -183,6 +183,7 @@ the ** operator (exponentiation) has the highest priority;
 then the unary + and - (note: a unary operator to the right of the exponentiation operator binds more strongly, for example 4 ** -1 equals 0.25)
 then: *, /, and %,
 and finally, the lowest priority: binary + and -.
+<br>
 7. Subexpressions in parentheses are always calculated first, e.g., 15 - 1 * (5 * (1 + 2)) = 0.
 
 8. The exponentiation operator uses right-sided binding, e.g., 2 ** 2 ** 3 = 256.
