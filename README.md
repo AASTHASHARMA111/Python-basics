@@ -255,3 +255,137 @@ total_apples = john + mary + adam
 print("Total number of apples:", total_apples)
 Try different values, create new variables, and perform various arithmetic operations (+, -, *, /, //, etc.).
 
+# Purpose of Comments
+Comments are notes for humans, not Python.
+
+They're used to:
+
+Explain code functionality.
+
+Describe variable meanings.
+
+Track authorship and version.
+
+Temporarily disable parts of code for testing.
+
+🔹 Syntax of Comments in Python
+Begin a comment with a # – everything after it on the line is ignored by Python.
+
+For multi-line comments, start each line with #.
+
+#This is a comment.
+#So is this.
+Inline comments are also possible:
+
+a = 3.0  # This assigns 3.0 to variable a
+🔹 Best Practices
+Use clear, self-explanatory variable names (e.g., square_area over aunt_jane).
+
+Avoid unnecessary comments if variable names are self-commenting.
+
+Don’t leave incorrect or outdated comments – they mislead.
+
+🔹 Using Comments to Disable Code
+Temporarily turn off lines of code using #, especially useful during debugging/testing.
+
+#y = y + x  #Temporarily disabled for testing
+Shortcut: Ctrl + / (Windows) or Cmd + / (Mac) to comment/uncomment multiple lines.
+
+🔹 Improving Code Readability
+Use comments where needed, but avoid clutter.
+
+Improve variable names instead of relying only on comments.
+
+Break complex code into functions with meaningful names.
+
+🔹 Section Quiz Insights
+Quiz Snippet 1:
+
+#print("String #1")
+print("String #2")
+✅ Output: String #2 (since the first line is commented out)
+
+Quiz Snippet 2:
+
+#This is
+a multiline
+comment. #
+print("Hello!")
+❌ Error – this will cause a SyntaxError because:
+
+a multiline is not commented and isn't valid Python syntax.
+
+# Overview
+This section introduces user interaction in Python using the input() function.
+
+You’ll learn to accept user input, convert it to different data types, and use string operators.
+
+🔹 2.6.1 The input() function
+The input() function reads data entered by the user and returns it as a string.
+
+Basic example:
+
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+Note: Always store the input in a variable, or the data will be lost.
+
+🔹 2.6.2 input() with a prompt
+You can pass a string argument to input() to show a prompt:
+
+anything = input("Tell me anything...")
+
+🔹 2.6.3 Result of input()
+The result of input() is always a string.
+
+Arithmetic operations can’t be done directly on input values unless they are converted.
+
+🔹 2.6.4 Prohibited operations
+Trying to use a string (from input()) in a math operation causes a TypeError.
+
+anything = input("Enter a number: ")
+something = anything ** 2.0  # ❌ TypeError
+
+🔹 2.6.5 Type Casting
+Use int() and float() to convert strings to numeric types:
+
+number = float(input("Enter a number: "))
+print(number ** 2)
+
+🔹 2.6.6 Practical usage
+Use type casting with input() to build interactive, numeric programs.
+
+Example: calculating hypotenuse by reading user input.
+
+🔹 2.6.7 String Operators
+The + operator concatenates strings:
+
+"Hello " + "World"  # → "Hello World"
+The * operator repeats strings:
+
+"Hi" * 3  # → "HiHiHi"
+
+🔹 2.6.8 Converting numbers to strings
+Use str() to convert numbers to strings:
+
+str(3.14)  # → "3.14"
+
+🔹 2.6.9 LAB: Simple Input and Output
+Practice: Accept two numbers and print results of:
+
+Addition
+
+Subtraction
+
+Multiplication
+
+Division
+
+## Key Takeaways:
+input() gets string input from the user.
+
+Use int() / float() for numeric conversions.
+
+str() converts data back to strings.
+
+String operators + and * allow concatenation and replication.
