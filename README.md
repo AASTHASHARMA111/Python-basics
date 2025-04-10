@@ -188,4 +188,70 @@ and finally, the lowest priority: binary + and -.
 
 8. The exponentiation operator uses right-sided binding, e.g., 2 ** 2 ** 3 = 256.
 
+# Variables
+
+## 1 What are Variables?
+Variables in Python act like containers (or boxes) used to store data.
+
+Every variable has:
+
+A name (identifier).
+
+A value (data stored inside).
+
+You can store any type of value: integer, float, string, etc.
+
+Variables are created through assignment, using the = operator.
+
+## Naming Variables
+Rules for naming:
+
+Can include letters (a–z, A–Z), digits (0–9), and underscores _.
+
+Must start with a letter or an underscore (not a digit or special symbol).
+
+Case-sensitive (Var and var are different).
+
+Must not be a Python keyword (e.g., import, for, class).
+
+PEP 8 suggests using lowercase and underscores for readability (e.g., my_variable).
+
+## Creating and Using Variables
+Assigning a value to a variable automatically creates it.
+
+var = 1
+print(var)  # Outputs: 1
+Using a variable before assigning a value causes an error.
+
+You can print strings and variables together using +:
+
+version = "3.8.5"
+print("Python version: " + version)
+
+## Updating Variables
+You can reassign new values to an existing variable:
+
+var = 100
+var = var + 1  # var becomes 101
+Python’s = means assignment, not equality.
+
+## Mathematical Problem Example
+You can use variables to solve problems like the Pythagorean Theorem:
+
+a = 3.0
+b = 4.0
+c = (a**2 + b**2) ** 0.5
+print("c =", c)  # Outputs: 5.0
+
+## Practice Lab: Apples Story
+Example task:
+
+
+john = 3
+mary = 5
+adam = 6
+print(john, mary, adam)
+total_apples = john + mary + adam
+print("Total number of apples:", total_apples)
+Try different values, create new variables, and perform various arithmetic operations (+, -, *, /, //, etc.).
 
