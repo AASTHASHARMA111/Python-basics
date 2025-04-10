@@ -44,3 +44,47 @@ To start your work, you need the following tools:
 7. Positional arguments are the ones whose meaning is dictated by their position, e.g., the second argument is outputted after the first, the third is outputted after the second, etc.
 8. Keyword arguments are the ones whose meaning is not dictated by their location, but by a special word (keyword) used to identify them.
 9. The end and sep parameters can be used for formatting the output of the print() function. The sep parameter specifies the separator between the outputted arguments, e.g., print("H", "E", "L", "L", "O", sep="-"), whereas the end parameter specifies what to print at the end of the print statement.
+
+# What are Literals?
+Literals are fixed values directly used in code, like 123 or "Hello".
+
+Example: 123 is a literal (clearly defined value), but c is not.
+
+## Types of Python Literals:
+1. Integer Literals
+Whole numbers without fractions: 123, -456, +789
+
+Readable Format: Use underscores, e.g., 11_111_111
+
+Octal Numbers: Start with 0o (e.g., 0o123 = decimal 83)
+
+Hexadecimal Numbers: Start with 0x (e.g., 0x123 = decimal 291)
+
+2. Floating-Point Literals (Floats)
+Numbers with decimal parts: 2.5, -0.4, .4, 4.
+
+Use scientific notation for very large/small numbers:
+
+3E8 = 3 × 10⁸ (speed of light)
+
+6.62607E-34 = Planck’s constant
+
+Python auto-formats small/large numbers using e notation for efficiency.
+
+3. String Literals
+Text enclosed in quotes: "I am a string" or 'Hello'
+
+To include quotes inside strings:
+
+Use escape character (\" or \')
+
+Or use different types of quotes to enclose the string
+
+Key Notes
+Python treats types differently in memory even if they look similar:
+4 (int) ≠ 4.0 (float)
+
+Commas cannot be used in numbers (e.g., 11,111 is invalid).
+
+Literals are essential for encoding data in Python programs.
+
