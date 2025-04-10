@@ -8,7 +8,7 @@ At the height of its success, the Monty Python team were performing their sketch
 
 Since Monty Python is considered one of the two fundamental nutrients to a programmer (the other being pizza), Python's creator named the language in honor of the TV show.
 
-# Python goals
+## Python goals
 In 1999, Guido van Rossum defined his goals for Python:
 
 an easy and intuitive language just as powerful as those of the major competitors;
@@ -16,7 +16,7 @@ open source, so anyone can contribute to its development;
 code that is as understandable as plain English;
 suitable for everyday tasks, allowing for short development times.
 
-# Why Python?
+## Why Python?
 
 There are many reasons – 
 
@@ -26,7 +26,7 @@ it's easy to use for writing new software - it's often possible to write code fa
 it's easy to understand - it's also often easier to understand someone else's code faster if it is written in Python;
 it's easy to obtain, install and deploy - Python is free, open and multiplatform; not all languages can boast that.
 
-# Starting your work with Python
+## Starting your work with Python
 
 To start your work, you need the following tools:
 •	an editor which will support you in writing the code (it should have some special features, not available in simple tools); this dedicated editor will give you more than the standard OS equipment;
