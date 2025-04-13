@@ -449,3 +449,78 @@ Input: 55 → Output: False
 
 Input: 100 → Output: True
 
+# Conditions and Conditional Execution
+Conditional statements let Python perform different actions based on whether a condition is True or False.
+
+The basic form is:
+
+if condition:
+    # code to run if condition is True
+Indentation is crucial—indented code after if is only executed if the condition is true.
+
+Conditions are based on Boolean values (True or False).
+
+if statement:
+Executes a block of code only if a given condition is true.
+
+if sheep_counter >= 120:
+    sleep_and_dream()
+if-else statement:
+Handles both scenarios—when the condition is true and when it is false.
+
+if the_weather_is_good:
+    go_for_a_walk()
+else:
+    go_to_a_theater()
+Nested if-else:
+if statements can be nested inside each other to handle multiple levels of conditions.
+
+if weather_is_good:
+    if restaurant_is_open:
+        eat_lunch()
+    else:
+        eat_sandwich()
+else:
+    if tickets_available:
+        go_to_theater()
+    else:
+        go_shopping()
+elif statement:
+Short for else if, used for checking multiple conditions in sequence.
+
+if weather_is_good:
+    go_for_a_walk()
+elif tickets_available:
+    go_to_theater()
+elif table_available:
+    go_for_lunch()
+else:
+    play_chess()
+Only one branch (first True condition) is executed in an if-elif-else cascade.
+
+The else part is optional.
+
+3.1.8 Analyzing Code Samples
+These examples demonstrate practical use of conditional statements to compare numbers:
+
+Example 1 – Find the larger of two numbers
+
+if number1 > number2:
+    larger_number = number1
+else:
+    larger_number = number2
+Example 2 – Compact form (single-line)
+You can write simple if-else conditions in a single line, though it may reduce readability.
+
+if number1 > number2: larger_number = number1
+else: larger_number = number2
+Example 3 – Find the largest of three numbers
+Begins by assuming the first number is the largest, then checks the other two:
+
+largest = number1
+if number2 > largest:
+    largest = number2
+if number3 > largest:
+    largest = number3
+
+    
