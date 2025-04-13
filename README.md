@@ -389,3 +389,63 @@ Use int() / float() for numeric conversions.
 str() converts data back to strings.
 
 String operators + and * allow concatenation and replication.
+
+# Objective
+Learn how to make decisions in Python using conditional statements and comparison operators.
+
+## Key Concepts
+1. Decision-Making in Programs
+Programs ask questions using comparison operators.
+
+Computers only answer:
+
+True (Yes)
+
+False (No)
+
+2. Equality Operator (==)
+Checks if two values are equal.
+Example: 2 == 2 → True
+
+= assigns a value; == compares values.
+
+3. Inequality Operator (!=)
+Checks if two values are not equal.
+Example: 1 != 2 → True
+
+4. Other Comparison Operators
+> : Greater than
+
+< : Less than
+
+>= : Greater than or equal to
+
+<= : Less than or equal to
+
+These operators compare values and return either True or False.
+
+5. Using Comparison Results
+You can store the result of a comparison in a variable.
+Example:
+
+answer = black_sheep > white_sheep
+Or you can use it directly in decisions, which will be taught later with if statements.
+
+6. Operator Precedence
+Operators like >, <, >=, <= have higher priority than == or !=.
+
+## LAB Exercise 
+Task:
+Take an integer input n and print True if n >= 100, else print False.
+Do not use if statements.
+
+Example Code:
+
+n = int(input())
+print(n >= 100)
+Sample Output:
+
+Input: 55 → Output: False
+
+Input: 100 → Output: True
+
