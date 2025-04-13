@@ -626,7 +626,8 @@ i is the loop control variable.
 Example with two arguments:
 
 for i in range(2, 8):  # i takes values from 2 to 7
-🧠 Key Takeaways:
+
+## Key Takeaways:
 Use while when the number of iterations is unknown.
 
 Use for when iterating over a sequence or a set number of times.
