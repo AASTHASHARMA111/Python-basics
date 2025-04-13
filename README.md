@@ -636,3 +636,44 @@ Always ensure loop conditions eventually become false (to prevent infinite loops
 
 Readability > compactness: write clear and understandable loops.
 
+The difference between for loop and while loop in Python lies in how and when they are used:
+
+🔁 for Loop:
+Used when the number of iterations is known or you are looping over a sequence (like a list, tuple, string, or range).
+
+Automatically handles the loop variable.
+
+Ideal for counting, iterating through items, or fixed repetitions.
+
+Example:
+
+for i in range(5):
+    print(i)
+➡️ Prints 0 to 4. Loops exactly 5 times.
+
+🔄 while Loop:
+Used when the number of iterations is not known beforehand.
+
+Continues as long as a condition is True.
+
+Needs manual control of the condition (e.g., updating variables inside the loop).
+
+Example:
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+➡️ Also prints 0 to 4, but you must manage the loop variable (i) yourself.
+
+⚖️ Key Differences:
+Feature	                for loop	                                while loop
+Iteration control	    Controlled by range() or sequence	        Controlled by a boolean condition
+Use case	            Known number of iterations	                Unknown/conditional number of iterations
+Loop variable	        Automatically managed	                    Manually updated
+Risk of infinite loop	Low (unless looping over infinite range)	High if condition is never False
+
+✅ When to Use:
+Use for loop when you know how many times to loop or when iterating over collections.
+Use while loop when looping depends on a condition that may vary or be user-controlled.
+
