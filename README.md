@@ -500,7 +500,7 @@ Only one branch (first True condition) is executed in an if-elif-else cascade.
 
 The else part is optional.
 
-3.1.8 Analyzing Code Samples
+## Analyzing Code Samples
 These examples demonstrate practical use of conditional statements to compare numbers:
 
 Example 1 – Find the larger of two numbers
@@ -523,4 +523,42 @@ if number2 > largest:
 if number3 > largest:
     largest = number3
 
-    
+## Summary 
+Comparison (Relational) Operators:
+
+Used to compare values (e.g., ==, !=, >, <, >=, <=).
+
+Example: If x = 0, y = 1, z = 0, you can use comparisons like x == z (True), x < y (True), etc.
+
+Conditional Statements:
+
+Simple if: Runs the block only if the condition is True.
+
+if x == 10:
+    print("x is 10")
+Multiple if statements: Each if is checked separately.
+
+if x > 5:
+    print("x > 5")
+if x == 10:
+    print("x is 10")
+if-else: Runs one block if True, another if False.
+
+if x < 10:
+    print("Less than 10")
+else:
+    print("10 or more")
+if-elif-else: Checks multiple conditions; only the first True block runs.
+
+if x == 10:
+    print("x == 10")
+elif x > 5:
+    print("x > 5")
+else:
+    print("None")
+Nested Conditionals: One if inside another.
+
+if x > 5:
+    if x == 10:
+        print("nested: x == 10")    
+
