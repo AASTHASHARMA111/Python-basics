@@ -562,3 +562,76 @@ if x > 5:
     if x == 10:
         print("nested: x == 10")    
 
+# Introduction to Loops
+Loops allow repeated execution of a block of code. Python mainly uses two types of loops:
+
+while loop – Repeats as long as a condition is True.
+
+for loop – Iterates over a sequence or range.
+
+## The while Loop
+Syntax:
+
+while condition:
+    # loop body
+Similar to if, but while continues as long as the condition is true.
+
+Loop must change the condition at some point to avoid infinite loops.
+
+Example: finding the largest number entered by a user until they type -1.
+
+## Infinite Loops
+A loop that never ends, e.g.:
+
+while True:
+    print("I'm stuck inside a loop.")
+Can be exited manually using Ctrl+C.
+
+Often caused by forgetting to update the condition.
+
+## More while Loop Examples
+Counting even and odd numbers until user enters 0.
+
+Alternative syntax:
+
+while number != 0:  # same as while number:
+if number % 2 == 1: # same as if number % 2:
+Using a counter to control loop iterations:
+
+counter = 5
+while counter:
+    print("Inside the loop", counter)
+    counter -= 1
+    
+## Lab: Guess the Secret Number
+A game where the user guesses a secret number.
+
+Uses a while loop to keep asking until correct.
+
+If incorrect: “Ha ha! You're stuck in my loop!”
+
+If correct: print the number and a congratulatory message.
+
+## The for Loop
+Used when you know in advance how many times to iterate.
+
+Syntax:
+
+for i in range(100):
+    # loop body
+range(100) generates values from 0 to 99.
+
+i is the loop control variable.
+
+Example with two arguments:
+
+for i in range(2, 8):  # i takes values from 2 to 7
+🧠 Key Takeaways:
+Use while when the number of iterations is unknown.
+
+Use for when iterating over a sequence or a set number of times.
+
+Always ensure loop conditions eventually become false (to prevent infinite loops).
+
+Readability > compactness: write clear and understandable loops.
+
