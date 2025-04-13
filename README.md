@@ -677,3 +677,84 @@ Risk of infinite loop	Low (unless looping over infinite range)	High if condition
 Use for loop when you know how many times to loop or when iterating over collections.
 Use while loop when looping depends on a condition that may vary or be user-controlled.
 
+## More about the for loop and the range() function
+The range() function can take 3 arguments: start, stop, and step.
+
+Example: range(2, 8, 3) gives 2 and 5 (it skips by 3 but does not include 8).
+
+If start >= stop, the range is empty.
+
+Loops using empty ranges don't execute.
+
+The range() with 2 arguments must be ascending.
+
+## LAB: Counting Mississippily
+Purpose: Simulate counting seconds like "1 Mississippi, 2 Mississippi…".
+
+Uses a for loop from 1 to 5.
+
+Uses time.sleep(1) to pause 1 second between prints.
+
+After counting to 5, it prints: "Ready or not, here I come!"
+
+## The break and continue statements
+break: immediately exits the loop.
+
+continue: skips the rest of the current loop iteration and moves to the next one.
+
+These statements simplify code but are not strictly necessary (just syntactic sugar).
+
+Good for handling conditions like exiting early or skipping unwanted data.
+
+## LAB: The break statement – Stuck in a loop
+Repeatedly asks user for input until "chupacabra" is entered.
+
+Once matched, prints "You've successfully left the loop." and exits using break.
+
+## LAB: The continue statement – the Ugly Vowel Eater
+Asks the user to input a word.
+
+Converts it to uppercase using upper().
+
+Loops through each letter and skips vowels (A, E, I, O, U) using continue.
+
+Prints only the consonants, each on a new line.
+
+## LAB: The continue statement – the Pretty Vowel Eater
+Similar to the Ugly Vowel Eater, but instead of printing each consonant:
+
+It collects all consonants into a string word_without_vowels.
+
+At the end, prints that string.
+
+A more refined version of vowel filtering using string concatenation.
+
+## The while loop and the else branch
+A while loop can have an else block.
+
+The else block runs after the loop finishes normally (not through break).
+
+Even if the loop doesn't execute at all, the else can still run.
+
+Useful for post-loop operations, especially when no break is used.
+
+## The for loop and the else branch
+Just like while, a for loop can also have an else.
+
+The else block executes after the loop finishes without being interrupted by break.
+
+If the loop is not entered at all, the else block still runs.
+
+Demonstrates control variable behavior and flow of execution.
+
+## LAB: Essentials of the while loop – Pyramid Building
+Given a number of blocks, build the tallest possible pyramid.
+
+Each level uses 1 more block than the one above.
+
+Use a while loop to subtract blocks and increase the pyramid height.
+
+Stops when not enough blocks are left for the next level.
+
+Example: 6 blocks can build a pyramid of height 3.
+
