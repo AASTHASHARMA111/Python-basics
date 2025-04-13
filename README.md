@@ -758,3 +758,80 @@ Stops when not enough blocks are left for the next level.
 
 Example: 6 blocks can build a pyramid of height 3.
 
+# Computer Logic
+Python uses logical operators like and, or, and not to form compound conditions.
+
+and: Both conditions must be true.
+
+or: At least one condition must be true.
+
+not: Negates the truth value.
+
+These follow standard truth tables used in logic.
+
+## Logical Expressions
+Logical expressions can be simplified using De Morgan’s Laws:
+
+not (A and B) is equivalent to not A or not B
+
+not (A or B) is equivalent to not A and not B
+
+Logical expressions return True or False.
+
+Logical operators do not support the shortcut assignment (op=) form.
+
+## Logical Values vs. Single Bits
+Logical operations work on truthiness (0 = False, non-zero = True), not actual bit patterns.
+
+Example: not not 1 is True.
+
+## Bitwise Operators
+Bitwise operators work on the binary representation of integers:
+
+& (AND): 1 if both bits are 1.
+
+| (OR): 1 if at least one bit is 1.
+
+^ (XOR): 1 if only one of the bits is 1.
+
+~ (NOT): flips all bits.
+
+Operate on each bit individually, unlike logical operators which evaluate the entire value.
+
+## How Do We Deal with Single Bits?
+Use bit masks to check, set, reset, or toggle specific bits:
+
+Check bit: flag_register & mask
+
+Reset bit: flag_register &= ~mask
+
+Set bit: flag_register |= mask
+
+Toggle bit: flag_register ^= mask
+
+Bit masking allows safe manipulation of individual bits without affecting others.
+
+## Binary Left Shift and Binary Right Shift
+<< shifts bits left (like multiplying by 2^n).
+
+>> shifts bits right (like integer division by 2^n).
+
+These operations work on integers only.
+
+Example:
+
+17 >> 1 = 8 (equivalent to 17 // 2)
+
+17 << 2 = 68 (equivalent to 17 * 4)
+
+## Section Summary
+Logical Operators:
+
+and, or, not – operate on truth values.
+
+Bitwise Operators:
+
+&, |, ~, ^, <<, >> – manipulate individual bits.
+
+Used for tasks like flags, binary calculations, efficient memory handling.
+
