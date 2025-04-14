@@ -1089,3 +1089,62 @@ How to write it in Python.
 
 That Python offers simpler and faster alternatives (sort(), reverse()).
 
+# Operations on Lists:
+
+## Understanding Lists and Assignments
+Assigning one list to another using list_2 = list_1 does not create a copy. Both variables refer to the same memory location.
+
+Changing one will affect the other.
+
+## Slicing Lists
+Use slicing to copy lists: list_2 = list_1[:].
+
+General slicing syntax: list[start:end] copies elements from start to end - 1.
+
+Negative indices work just like in regular indexing (e.g., list[1:-1]).
+
+Omitting indices:
+
+list[:end] → from start to end - 1.
+
+list[start:] → from start to end.
+
+list[:] → entire list (deep copy).
+
+## Deleting List Elements
+Use del to delete:
+
+specific elements: del list[0]
+
+slices: del list[1:3]
+
+entire list: del list (deletes the variable itself).
+
+## Using in and not in
+elem in list → checks if element exists in the list.
+
+elem not in list → checks if element is not in the list.
+
+Returns True or False.
+
+## Simple Programs Using Lists
+Find the largest number in a list using a loop.
+
+Search for an element and return its index.
+
+Count matches between two lists (like a lottery result checker).
+
+Remove duplicates from a list:
+
+Create a new list and add items only if not already present.
+
+## Section Summary
+Direct assignment shares references.
+
+Use slicing for copying lists or sublists.
+
+Negative and omitted indices make slicing flexible.
+
+Use del to remove list elements or slices.
+
+in and not in help check element presence.
