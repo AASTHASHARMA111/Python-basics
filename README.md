@@ -1148,3 +1148,45 @@ Negative and omitted indices make slicing flexible.
 Use del to remove list elements or slices.
 
 in and not in help check element presence.
+
+# Lists in Lists (Nested Lists)
+Lists can contain other lists as elements.
+
+Example: A chessboard can be modeled as an 8x8 nested list (matrix), with each row being a list of 8 elements.
+
+List Comprehensions simplify list creation.
+E.g., row = [WHITE_PAWN for i in range(8)]
+
+## Two-Dimensional Arrays
+You can build a full chessboard using nested comprehensions:
+board = [[EMPTY for i in range(8)] for j in range(8)]
+
+Access elements using two indices: board[row][column]
+
+You can place pieces by setting specific indices (e.g., board[0][0] = ROOK)
+
+## Multidimensional Lists: Advanced Applications
+Useful for representing complex data like weather readings or hotel occupancy.
+
+Example: Store 744 hourly temperature readings for a 31-day month: temps = [[0.0 for h in range(24)] for d in range(31)]
+
+Example operations:
+
+Calculate average noon temp: average = sum(day[11] for day in temps) / 31
+
+Find highest temp: iterate through all temps.
+
+Count hot days: if day[11] > 20.0
+
+3D Example: Hotel with 3 buildings × 15 floors × 20 rooms:
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+
+## Section Summary
+List Comprehension Syntax:
+[expression for item in iterable if condition]
+
+More compact than a standard for loop.
+
+Nested Lists for Matrices: Create and access 2D arrays (e.g., table[0][3])
+
+Multidimensional Lists: Python allows arbitrary levels of nesting (3D arrays and beyond).
