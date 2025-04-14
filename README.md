@@ -839,6 +839,8 @@ Used for tasks like flags, binary calculations, efficient memory handling.
 In programming, we often need to store multiple values under a single name. Using individual variables (like mark1, mark2, mark3) is inefficient and not scalable.
 Lists allow us to store multiple related values in a single variable (like marks = [95, 85, 76]).
 This makes it easier to manipulate and process data using loops, instead of writing repetitive code for each variable.
+The list is a type of data in Python used to store multiple objects. It is an ordered and mutable collection of comma-separated items between square brackets.
+e.g.:my_list = [1, None, True, "I am a string", 256, 0]
 
 ## Indexing lists
 A list is like a container of elements, and each element has a position called an index, starting from 0.
@@ -906,6 +908,8 @@ A function is a standalone operation like len(list_name).
 A method is attached to an object and called using a dot, like list_name.append(value).
 
 So, len() is a function, but append() is a method specific to list objects.
+
+A typical function invocation looks as follows: result = function(arg), while a typical method invocation looks like this:result = data.method(arg).
 
 ## Adding elements to a list: append() and insert()
 You can add elements in two main ways:
@@ -992,4 +996,96 @@ Counting specific items,
 Removing duplicates, etc.
 
 🧠 Purpose: These programs help solidify your understanding by applying list operations in useful, real-world mini-projects.
+
+# The Bubble Sort
+
+This part introduces the Bubble Sort algorithm:
+
+Goal: Sort a list in increasing order by comparing and swapping adjacent elements if they’re in the wrong order.
+
+Process:
+
+Start from the beginning of the list.
+
+Compare each pair of adjacent elements.
+
+If the first is greater than the second, swap them.
+
+Repeat the process until no more swaps are needed.
+
+After each full pass:
+
+The largest unsorted element "bubbles up" to its correct position (like a bubble rising to the top).
+
+With each new pass, the number of elements to check decreases.
+
+📌 Example:
+From [8, 10, 6, 2, 4], each pass pushes the largest remaining value to the end:
+
+1st pass: 10 reaches the end.
+
+2nd pass: 8 moves to its correct place.
+
+Continue until sorted.
+
+## Sorting a List
+
+This part teaches how to implement Bubble Sort in Python and how many passes are needed:
+
+Introduces the concept of using a flag variable swapped to track whether any swaps happened in a pass.
+
+If no swaps happen during a pass, the list is already sorted, and the loop can stop early — making it more efficient.
+
+📌 Example Code:
+
+my_list = [8, 10, 6, 2, 4]
+swapped = True
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+This loops until the list is fully sorted — swapping elements only when necessary.
+
+## The Bubble Sort – Interactive Version
+
+An interactive version of the Bubble Sort is presented here, where:
+
+The user can input values into a list.
+
+The program sorts it using the Bubble Sort technique.
+
+This part emphasizes practical implementation and user interaction in Python.
+
+💡 Important Note:
+While learning Bubble Sort is useful to understand basic sorting logic, Python already has built-in sorting functions that are much more efficient and easier to use.
+
+📌 Example using Python’s built-in method:
+
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)  # Output: [2, 4, 6, 8, 10]
+🔹 3.5.4 – Section Summary
+This wraps up everything taught in Section 5:
+
+## Key Takeaways:
+
+Use the sort() method to quickly sort a list in-place.
+
+lst = [5, 3, 1, 2, 4]
+lst.sort()
+print(lst)  # [1, 2, 3, 4, 5]
+Use the reverse() method to reverse the order of a list.
+
+lst.reverse()
+print(lst)  # [4, 3, 2, 1, 0]
+💬 You’ve learned:
+
+The logic and step-by-step working of the Bubble Sort algorithm.
+
+How to write it in Python.
+
+That Python offers simpler and faster alternatives (sort(), reverse()).
 
