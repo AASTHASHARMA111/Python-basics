@@ -1227,6 +1227,13 @@ Define functions using def:
  
 def message():
     print("Enter a value:")
+
+It always starts with the keyword def (for define)
+next after def goes the name of the function (the rules for naming functions are exactly the same as for naming variables)
+after the function name, there's a place for a pair of parentheses (they contain nothing here, but that will change soon)
+the line has to be ended with a colon;
+the line directly after def begins the function body ‒ a couple (at least one) of necessarily nested instructions, which will be executed every time the function is invoked; note: the function ends where the nesting ends, so you have to be careful.
+
 Functions must be called to execute.
 
 You can reuse the function anywhere in your code.
