@@ -1190,3 +1190,80 @@ More compact than a standard for loop.
 Nested Lists for Matrices: Create and access 2D arrays (e.g., table[0][3])
 
 Multidimensional Lists: Python allows arbitrary levels of nesting (3D arrays and beyond).
+
+# Introduction to Functions
+
+## Why Do We Need Functions?
+Functions simplify repetitive tasks, improve code readability, and reduce errors.
+
+Use functions when:
+
+Code is reused multiple times.
+
+Code becomes too complex to manage.
+
+Work needs to be divided among multiple developers (modular design).
+
+## Decomposition
+Break complex problems into smaller parts (functions) to improve manageability.
+
+Helps when working in teams: each developer works on different functions or modules.
+
+Supports clarity, testing, and modular development.
+
+## Sources of Functions
+Functions can come from:
+
+Built-in functions (e.g., print(), input()).
+
+Preinstalled modules (need to be imported).
+
+User-defined functions (you create them).
+
+Classes (not covered here).
+
+## Your First Function
+Define functions using def:
+ 
+def message():
+    print("Enter a value:")
+Functions must be called to execute.
+
+You can reuse the function anywhere in your code.
+
+Modifying the function body updates all instances where it's used.
+
+## How Functions Work
+Python reads code top to bottom:
+
+Define functions before calling them.
+
+Avoid naming conflicts (e.g., don’t use same name for a variable and a function).
+
+A function call:
+
+Jumps to the function → runs its body → returns back after execution.
+
+## Section Summary
+Functions improve reusability, clarity, and structure.
+
+Python functions:
+
+Built-in
+
+From modules
+
+User-defined
+
+Lambda (covered later)
+
+Define with:
+
+def function_name(parameters):
+    # body
+Example:
+
+def hello(name):
+    print("Hello,", name)
+hello("Aastha")
+
