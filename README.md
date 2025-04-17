@@ -1274,3 +1274,137 @@ def hello(name):
     print("Hello,", name)
 hello("Aastha")
 
+# Understanding Function Communication: Parameters and Arguments
+Functions in Python are blocks of code designed to perform specific tasks. They become powerful when they can accept input values (called arguments) to process and produce results based on different conditions. These inputs are handled using parameters.
+
+## Parameterized Functions
+
+Parameters are variables listed inside the parentheses of a function definition.
+
+Arguments are actual values passed to the function when it is called.
+
+### Key Points:
+
+Parameters exist only within the function (local scope).
+
+Arguments are defined outside and are passed to the function during invocation.
+
+def message(number):
+    print("Enter a number:", number)
+
+message(1)  # Output: Enter a number: 1
+Even if a variable with the same name exists outside the function, it’s different inside. This concept is called shadowing.
+
+## Positional Argument Passing
+Arguments are matched to parameters by their position.
+
+The first argument goes to the first parameter, the second to the second, and so on.
+
+def greet(first_name, last_name):
+    print("Hello,", first_name, last_name)
+
+greet("John", "Doe")  # Output: Hello, John Doe
+📌 This order is crucial! Changing the order changes the meaning.
+
+## Keyword Argument Passing
+Arguments are passed using parameter names, so their order doesn’t matter.
+
+greet(first_name="James", last_name="Bond")
+greet(last_name="Skywalker", first_name="Luke")
+📌 Using incorrect parameter names causes a TypeError.
+
+## Mixing Positional and Keyword Arguments
+You can mix both, but:
+
+Positional arguments must come before keyword arguments.
+
+def add(a, b, c):
+    print(a + b + c)
+
+add(3, b=2, c=1)  # Correct
+add(a=3, 2, c=1)  # ❌ SyntaxError
+
+## Default Parameter Values
+You can give a default value to a parameter, making it optional during function calls.
+
+def intro(first_name, last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+
+intro("James")  # Output: Hello, my name is James Smith
+📌 Default values make functions flexible and avoid repetition.
+
+## Summary
+
+Concept	Description
+Parameters	Placeholders in function definitions to accept values
+Arguments	Actual values passed to parameters when calling a function
+Positional Arguments	Matched based on order
+Keyword Arguments	Matched by parameter name, order doesn't matter
+Default Parameters	Allow functions to have optional arguments
+Mixing Rules	Positional must come before keyword arguments
+
+# 🔁 Functions: Effects vs. Results
+Functions can produce effects (like printing text) or return results using the return keyword.
+
+return exits the function and can optionally send a result back to the caller.
+
+## Types of return Statements
+Without Expression
+Ends the function early but doesn't return a specific value (implicitly returns None).
+
+def func():
+    if condition:
+        return  # Ends here
+    print("Continue...")
+With Expression
+Returns a computed value.
+
+def add(a, b):
+    return a + b
+    
+## The None Value
+Special value representing "nothing" or "no result".
+
+Returned by default if no return is specified.
+
+Can't be used in expressions (e.g., None + 2 causes error).
+
+Use is None to check for it.
+
+## Functions & Lists
+
+### Passing a list to a function is allowed:
+
+def sum_list(lst):
+    return sum(lst)
+## Returning a list from a function is allowed:
+
+def generate_list(n):
+    return list(range(n))
+    
+### Practice LABs Summary
+Leap Year Check: Function that returns True if a year is a leap year.
+
+Days in a Month: Function that returns days in a given year-month combo.
+
+Day of the Year: Returns the day number from a date.
+
+Prime Number Checker: Function to verify if a number is prime.
+
+Fuel Consumption Converters:
+
+liters_100km_to_miles_gallon
+
+miles_gallon_to_liters_100km
+
+## Key Takeaways
+Use return to send back a value.
+
+You can ignore a function’s return if not needed.
+
+Use None carefully — it often means no value or a mistake.
+
+Lists can be both inputs and outputs of functions.
+
+Function results can be assigned to variables for reuse.
+
