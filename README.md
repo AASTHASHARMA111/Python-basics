@@ -1546,3 +1546,68 @@ Great for problems like factorials and Fibonacci.
 
 Examples show how recursive solutions are often shorter and conceptually aligned with mathematical definitions.
 
+# Tuples and Dictionaries from the Python course:
+
+## Sequence Types and Mutability
+Sequence types: Data types that store multiple values in order, e.g., lists and tuples. These can be iterated using for loops.
+
+Mutability:
+
+Mutable objects (like lists) can be modified in place (in situ).
+
+Immutable objects (like tuples) cannot be changed after creation.
+
+## Tuples
+Tuples are immutable sequences and are created using parentheses or just commas.
+
+Example: tuple_1 = (1, 2, 3) or tuple_2 = 1., 2., 3.
+
+Can contain elements of different types.
+
+Single-element tuples must include a comma: (1,)
+
+Accessing elements is like lists, but you can’t modify them (append, del, etc. will raise errors).
+
+Tuple operations:
+
+len() – length
+
++, * – concatenation and repetition
+
+in, not in – membership check
+
+Can be used on the left side of assignment for unpacking values (e.g., swapping variables).
+
+## Dictionaries
+Dictionaries are mutable collections of key-value pairs.
+
+Created using curly braces {}.
+
+Example: {"cat": "chat", "dog": "chien"}
+
+Keys must be unique and immutable (strings, numbers, tuples).
+
+Dictionaries are unordered (in older versions of Python).
+
+Access values using keys: dictionary['cat']
+
+Use in / not in to check key existence before accessing.
+
+Helpful formatting: hanging indent for readability.
+
+##  Dictionary Methods
+.keys() returns iterable of all keys.
+
+.items() returns key-value pairs as tuples.
+
+Looping through:
+
+for key in d.keys():
+    print(key, "->", d[key])
+or
+
+for k, v in d.items():
+    print(k, "->", v)
+Modifying values:
+Just assign: d["cat"] = "minou"
+
