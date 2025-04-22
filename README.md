@@ -1408,3 +1408,77 @@ Lists can be both inputs and outputs of functions.
 
 Function results can be assigned to variables for reuse.
 
+#  What is Scope?
+Scope refers to the region of code where a variable is recognized.
+
+Example: A function’s parameter is only accessible inside the function.
+
+## Types of Variables:
+Global Variables:
+
+Defined outside functions.
+
+Accessible inside functions unless shadowed by a local variable of the same name.
+
+Local Variables:
+
+Defined inside functions.
+
+Only accessible within the function where they are created.
+
+## Important Rules & Examples:
+✅ A global variable can be read inside a function.
+
+python
+Copy
+Edit
+var = 2
+def multiply(x):
+    return x * var  # uses global var
+    
+❌ A global variable is not writable inside a function without global:
+
+python
+Copy
+Edit
+var = 2
+def change():
+    var = 5  # this creates a *new local* var
+    
+✅ Use global keyword to modify a global variable inside a function:
+
+
+var = 2
+def change():
+    global var
+    var = 5  # modifies global var
+    
+## Function Arguments and Scope:
+Scalar values (e.g., int, float):
+
+Passed by value (copy of the value).
+
+Changes inside function do not affect the original.
+
+Lists and mutable objects:
+
+Passed by reference.
+
+Reassigning the list creates a new local copy.
+
+Modifying the list (e.g., deleting an item) affects the original.
+
+def modify_list(lst):
+    del lst[0]  # this affects the original list
+    
+## Key Takeaways:
+Variables outside a function are accessible inside unless shadowed.
+
+Variables defined inside a function don't exist outside it.
+
+Use global to allow a function to modify a global variable.
+
+Scalars are passed by value, lists are passed by reference.
+
+Reassigning a list doesn’t affect the original, but modifying it does.
+
