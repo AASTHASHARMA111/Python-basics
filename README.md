@@ -1482,3 +1482,67 @@ Scalars are passed by value, lists are passed by reference.
 
 Reassigning a list doesn’t affect the original, but modifying it does.
 
+# Creating Multi-Parameter Functions
+This section introduces the concept of functions with multiple parameters using various real-life examples.
+
+## BMI Calculator
+Calculates Body Mass Index using weight / height².
+
+Enhancements include:
+
+Input validation: returns None if weight or height is unrealistic.
+
+Added helper functions to convert imperial units to metric:
+
+lb_to_kg(lb) → Converts pounds to kg.
+
+ft_and_inch_to_m(ft, inch=0.0) → Converts feet & inches to meters.
+
+Final function handles users' height/weight in feet/inches and pounds.
+
+## Triangle Functions
+is_a_triangle(a, b, c):
+
+Checks if three lengths can form a triangle using the triangle inequality theorem.
+
+Returns True or False.
+
+is_a_right_triangle(a, b, c):
+
+Uses the Pythagorean theorem to check for right-angled triangles.
+
+Identifies the longest side as the hypotenuse.
+
+area_of_triangle(a, b, c):
+
+Calculates area using Heron’s formula.
+
+Checks if it's a valid triangle before computing.
+
+## Factorial Function
+factorial_function(n):
+
+Returns factorial of a non-negative integer.
+
+Uses a for loop for iterative computation.
+
+Returns None if input is negative.
+
+## Fibonacci Sequence
+fib(n):
+
+Computes the nth Fibonacci number.
+
+First two numbers are 1, and each next is the sum of the previous two.
+
+Uses a loop for efficiency.
+
+## Recursion
+Introduces recursive functions:
+
+A function that calls itself.
+
+Great for problems like factorials and Fibonacci.
+
+Examples show how recursive solutions are often shorter and conceptually aligned with mathematical definitions.
+
