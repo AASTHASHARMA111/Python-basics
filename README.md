@@ -1611,3 +1611,123 @@ for k, v in d.items():
 Modifying values:
 Just assign: d["cat"] = "minou"
 
+## Modifying and Adding Values in Dictionaries
+
+Modifying an Existing Value:
+Simply assign a new value to an existing key:
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+dictionary['cat'] = 'minou'
+print(dictionary)
+Output:
+{'cat': 'minou', 'dog': 'chien', 'horse': 'cheval'}
+
+To sort the dictionary keys, use:
+
+for key in sorted(dictionary.keys()):
+    print(key)
+Accessing Values:
+Use the values() method to get all the values in the dictionary:
+
+for french in dictionary.values():
+    print(french)
+Adding a New Key-Value Pair:
+Add a new pair simply by assigning a value to a new key:
+
+dictionary['swan'] = 'cygne'
+print(dictionary)
+Output:
+{'cat': 'chat', 'dog': 'chien', 'horse': 'cheval', 'swan': 'cygne'}
+
+Alternatively, use the update() method:
+
+dictionary.update({"duck": "canard"})
+print(dictionary)
+Removing a Key:
+Use del to remove a key-value pair:
+
+del dictionary['dog']
+print(dictionary)
+Output:
+{'cat': 'chat', 'horse': 'cheval'}
+
+Trying to remove a non-existing key will cause an error.
+
+Removing the Last Item:
+Use the popitem() method to remove and return the last item:
+
+dictionary.popitem()
+print(dictionary)
+Output:
+{'cat': 'chat', 'dog': 'chien'}
+
+In older Python versions (pre-3.6.7), popitem() removes a random item.
+
+##  Using Tuples and Dictionaries Together
+Problem Overview:
+
+Collect students' names and scores.
+
+Store names as dictionary keys, and tuples of scores as values.
+
+Input ends when the user enters an empty name.
+
+Calculate and print each student's average score, sorted by name.
+
+Code Breakdown:
+
+Initialize an empty dictionary.
+
+Use a loop to take student names and scores.
+
+If name exists, append new score to the tuple.
+
+If name is new, create a new key with a one-element tuple.
+
+After input ends, iterate through the sorted dictionary and calculate averages.
+
+## Tuples – Key Points
+Ordered & Immutable: Like lists but unchangeable.
+
+Declaration:
+
+Empty: ()
+
+One-element: ("one",) or "one",
+
+Indexing: Access elements via indices.
+
+Immutability: Elements can't be modified, but you can delete the whole tuple.
+
+Operations:
+
+Loop through tuples.
+
+Check membership (in / not in).
+
+Use len(), concatenate (+), or repeat (*).
+
+Conversion: Use tuple() to convert other iterables into tuples.
+
+## Dictionaries – Key Points
+Unordered (ordered in Python 3.6+), Mutable, with key-value pairs.
+
+Accessing: Use dict[key] or dict.get(key).
+
+Modification: Update values using keys.
+
+Adding/Removing:
+
+Add with assignment or update().
+
+Remove with del, popitem(), or clear().
+
+Loops:
+
+Loop through keys.
+
+Use items() to loop through key-value pairs.
+
+Check Key: Use key in dict to check existence.
+
+Copying: Use copy() to duplicate a dictionary.
