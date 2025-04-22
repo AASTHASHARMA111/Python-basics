@@ -1757,7 +1757,8 @@ except: Handles the exception if it occurs.
 ## The Exception-Proves-the-Rule Approach: 
 With try and except, the program doesn't terminate on an error. Instead, control moves to the except block, which handles the error. This approach accepts errors as part of the program flow.
 
-## Dealing with Multiple Exceptions: Python allows handling multiple exceptions using multiple except branches. Each branch can handle a different exception type, such as ValueError and ZeroDivisionError, with customized handling for each.
+## Dealing with Multiple Exceptions: 
+Python allows handling multiple exceptions using multiple except branches. Each branch can handle a different exception type, such as ValueError and ZeroDivisionError, with customized handling for each.
 
 ## The Default Exception: 
 The default except block catches exceptions not explicitly handled by other branches. This block must always be placed last in the except chain.
